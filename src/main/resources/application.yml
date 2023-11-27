@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://board-rds.ckgoqr73qmbm.ap-northeast-2.rds.amazonaws.com:3306/board
+    username: admin
+    password: dpfthem1!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    # spring data jpa ??
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
